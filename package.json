@@ -1,7 +1,7 @@
 {
-  "name": "search-flow",
+  "name": "@ishar19/search-flow",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tool to search stackoverflow and get most relevants links at one place",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,12 +9,21 @@
     "run": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ishar Jain",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
     "chalk": "^5.0.1",
     "inquirer": "^9.1.2",
     "nanospinner": "^1.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishar19/search-flow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ishar19/search-flow/issues"
+  },
+  "homepage": "https://github.com/ishar19/search-flow#readme"
 }
