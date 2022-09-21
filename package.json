@@ -1,14 +1,14 @@
 {
-  "name": "@ishar19/search-flow",
+  "name": "search-flow",
   "version": "1.0.0",
   "description": "A tool to search stackoverflow and get most relevants links at one place",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node index.js"
+      "start": "node ."
   },
-  "keywords": [],
+  "bin": {"search-flow":"./index.js"},
+  "keywords": ["tools", "search", "stackoverflow", "productivity"],
   "author": "Ishar Jain",
   "license": "ISC",
   "dependencies": {
