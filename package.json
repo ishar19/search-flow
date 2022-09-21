@@ -1,6 +1,6 @@
 {
   "name": "search-flow",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A tool to search stackoverflow and get most relevants links at one place",
   "main": "index.js",
   "type": "module",
