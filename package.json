@@ -5,19 +5,26 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-      "start": "node ."
+    "start": "node ."
   },
-  "bin": {"search-flow":"./index.js"},
-  "keywords": ["tools", "search", "stackoverflow", "productivity"],
+  "bin": {
+    "search-flow": "./index.js"
+  },
+  "keywords": [
+    "tools",
+    "search",
+    "stackoverflow",
+    "productivity"
+  ],
   "author": "Ishar Jain",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
     "chalk": "^5.0.1",
     "inquirer": "^9.1.2",
-    "nanospinner": "^1.1.0"
+    "nanospinner": "^1.1.0",
+    "search-flow": "^1.0.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ishar19/search-flow.git"
