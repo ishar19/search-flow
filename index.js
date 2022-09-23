@@ -33,13 +33,22 @@ async function searchQuestion(question){
                 answers[data.title] = data.link
             });
             const titles = Object.keys(answers);
-            titles.forEach((title)=>{
-                console.log('\n')
-                console.log(chalk.bgBlack(chalk.red(title))) 
-                console.log("=>")
-                console.log(chalk.bgBlack(chalk.green(answers[title])))
-            })
-            spinner.success({ text: "These answers are found, click on any link to view the answer" });
+            // titles.forEach((title)=>{
+            //     console.log('\n')
+            //     console.log(chalk.bgBlack(chalk.red(title))) 
+            //     console.log("=>")
+            //     console.log(chalk.bgBlack(chalk.green(answers[title])))
+            // })
+            // spinner.success({ text: "These answers are found, click on any link to view the answer" });
+
+            const query = inquirer.prompt({
+                name: 'answers',
+                type: 'list',
+                message: 'Choose most relevant title from the list',
+                choices:titles
+            });
+            const chosenAnswer = query.answers;
+            console.log(chosenAnswer);
         })
         .catch((e)=>{
             spinner.error({ text: "Some unexpected stuff happened, try again" });
